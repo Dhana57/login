@@ -1,0 +1,116 @@
+/* Reset basic styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container for the form */
+.container {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 40px;
+    width: 100%;
+    max-width: 400px;
+    box-sizing: border-box;
+}
+
+/* Form heading */
+h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Input group styles */
+.input-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+    border-color: #4CAF50;
+    outline: none;
+}
+
+/* Error messages */
+small {
+    color: red;
+    font-size: 12px;
+    display: none;
+}
+
+/* Action buttons */
+.actions {
+    margin-bottom: 20px;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Links at the bottom */
+.links {
+    text-align: center;
+}
+
+.links a {
+    display: inline-block;
+    margin: 5px;
+    color: #007bff;
+    text-decoration: none;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 20px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    button {
+        font-size: 14px;
+    }
+}
